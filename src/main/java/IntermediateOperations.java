@@ -7,11 +7,11 @@ public class IntermediateOperations {
 
     public static void main(String[] args) {
         List<ResturantMenu> resturantMenus = new ArrayList<>();
-        resturantMenus.add(new ResturantMenu("Paneer", 100));
-        resturantMenus.add(new ResturantMenu("Chicken", 300));
-        resturantMenus.add(new ResturantMenu("Potato", 500));
-        resturantMenus.add(new ResturantMenu("Cheese", 200));
-        resturantMenus.add(new ResturantMenu("Pizza", 600));
+        resturantMenus.add(new ResturantMenu("Paneer", 100, DishType.VEG));
+        resturantMenus.add(new ResturantMenu("Chicken", 300, DishType.NON_VEG));
+        resturantMenus.add(new ResturantMenu("Potato", 500, DishType.VEG));
+        resturantMenus.add(new ResturantMenu("Cheese", 200, DishType.VEG));
+        resturantMenus.add(new ResturantMenu("Pizza", 600, DishType.VEG));
 
         System.out.println("Thread: " + Thread.currentThread().getName());
 
